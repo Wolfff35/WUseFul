@@ -3,6 +3,7 @@ package com.wolff.wuseful;
 import android.app.ActivityManager;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Configuration;
 import android.graphics.drawable.AnimationDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
@@ -18,6 +19,16 @@ import android.widget.ImageView;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation== Configuration.ORIENTATION_LANDSCAPE){
+
+        }
+        if(newConfig.keyboardHidden == Configuration.KEYBOARDHIDDEN_NO){
+
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
