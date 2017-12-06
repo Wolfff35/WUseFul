@@ -75,11 +75,16 @@ public class MainActivity extends AppCompatActivity {
         Log.e("ID 1"," = "+tm.getMeid(1));
         Log.e("ID 2"," = "+tm.getMeid(2));
 */
-        SensorManager sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+ /*       SensorManager sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         List<Sensor> l = sensorManager.getSensorList(1);
         for(int i=0;i<l.size();i++){
             Log.e("SENSOR",""+l.get(i).getName()+"; "+l.get(i).getStringType());
         }
+        */
+        //CompassView cv = new CompassView(this);
+        //setContentView(cv);
+        CompassView cv = (CompassView)findViewById(R.id.compassView);
+        cv.setBearing(45);
     }
     @Override
     protected void onDestroy() {

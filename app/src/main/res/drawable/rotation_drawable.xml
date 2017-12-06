@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ресурс RotationDrawable -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/frame1"
+    android:fromDegrees="0"
+    android:toDegrees="90"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    />
