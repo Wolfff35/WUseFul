@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.preference.PreferenceCategory android:title="Параметры подключения">
+        <android.preference.EditTextPreference
+            android:key = "pref_base_name"
+            android:title = "Имя базы"
+            android:summary = "Название базы"
+            android:defaultValue = "null">
+
+        </android.preference.EditTextPreference>
+        <android.preference.EditTextPreference
+            android:key = "pref_base_login"
+            android:title = "Логин"
+            android:summary = "Имя пользователя базы"
+            android:defaultValue = "null">
+
+        </android.preference.EditTextPreference>
+        <android.preference.EditTextPreference
+            android:key = "pref_base_password"
+            android:title = "Пароль"
+            android:summary = "Пароль пользователя базы"
+            android:defaultValue = "null">
+
+        </android.preference.EditTextPreference>
+        <android.preference.SwitchPreference
+            android:key = "pref_is_first_run"
+            android:title = "Первый запуск?"
+            android:summary = ""
+            android:defaultValue = "true">
+
+        </android.preference.SwitchPreference>
+
+    </android.preference.PreferenceCategory>
+</android.preference.PreferenceScreen>

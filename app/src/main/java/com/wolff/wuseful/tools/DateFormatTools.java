@@ -1,4 +1,4 @@
-package com.wolff.wuseful;
+package com.wolff.wuseful.tools;
 
 import java.text.DateFormat;
 import java.text.ParseException;

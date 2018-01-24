@@ -3,7 +3,7 @@ package com.wolff.wuseful.localdb;
 import android.database.Cursor;
 import android.database.CursorWrapper;
 
-import com.wolff.wuseful.DateFormatTools;
+import com.wolff.wuseful.tools.DateFormatTools;
 import com.wolff.wuseful.WTestObject;
 
 /**

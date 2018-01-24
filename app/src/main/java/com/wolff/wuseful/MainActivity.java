@@ -16,6 +16,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.wolff.wuseful.custom_view.DurationTextView;
+import com.wolff.wuseful.fragments.Settings_fragment;
+import com.wolff.wuseful.tools.UITools;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -83,8 +87,26 @@ public class MainActivity extends AppCompatActivity {
         */
         //CompassView cv = new CompassView(this);
         //setContentView(cv);
-        CompassView cv = (CompassView)findViewById(R.id.compassView);
-        cv.setBearing(45);
+        //CompassView cv = (CompassView)findViewById(R.id.compassView);
+        //cv.setBearing(45);
+
+ /*       DurationTextView durationView1 = (DurationTextView) findViewById(R.id.durationview1);
+        durationView1.setDuration(25);
+
+        DurationTextView durationView2 = (DurationTextView) findViewById(R.id.durationview2);
+        durationView2.setDuration(78);
+
+        DurationTextView durationView3 = (DurationTextView) findViewById(R.id.durationview3);
+        durationView3.setDuration(2378);
+
+        DurationTextView durationView4 = (DurationTextView) findViewById(R.id.durationview4);
+        durationView4.setDuration(3670);
+
+        DurationTextView durationView5 = (DurationTextView) findViewById(R.id.durationview5);
+        durationView5.setDuration(18550);
+  */
+        Settings_fragment sf = Settings_fragment.newInstance();
+        new UITools().displayFragment(this,sf);
     }
     @Override
     protected void onDestroy() {

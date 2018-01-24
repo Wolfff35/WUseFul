@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="valueSelector_margin_top">1sp</dimen>
+    <dimen name="valueSelector_text">14sp</dimen>
+    <dimen name="valueSelector_label_text">8sp</dimen>
+    <dimen name="valueSelector_button_hMargin">1sp</dimen>
+    <dimen name="valueSelector_button_insideMargin">1sp</dimen>
+    <dimen name="valueSelector_height">30sp</dimen>
+
+</resources>

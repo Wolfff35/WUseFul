@@ -1,4 +1,4 @@
-package com.wolff.wuseful;
+package com.wolff.wuseful.custom_view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -6,6 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.wolff.wuseful.R;
 
 /**
  * Created by wolfff on 06.12.17.
