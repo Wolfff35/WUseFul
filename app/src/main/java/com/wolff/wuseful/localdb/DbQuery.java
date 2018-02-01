@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
  * Created by wolfff on 23.01.18.
  */
 
-public class DbQuery {
+public class DbQuery<T> {
     private static DbQuery sDbQuery;
     private Context mContext;
     private SQLiteDatabase mDatabase;
@@ -24,7 +24,10 @@ public class DbQuery {
         return sDbQuery;
     }
 
-    public DbCursorWrapper query_testObjects(){
+    public DbCursorWrapper query(Class<T> clazz){
+        if(clazz.getName().equals("")){ //TODO
+
+        }
         String selection = null;
         String[] selectionArgs = null;
         String[] columns = null;
