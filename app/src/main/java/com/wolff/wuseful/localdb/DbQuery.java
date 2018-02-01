@@ -24,10 +24,7 @@ public class DbQuery<T> {
         return sDbQuery;
     }
 
-    public DbCursorWrapper query(Class<T> clazz){
-        if(clazz.getName().equals("")){ //TODO
-
-        }
+    public DbCursorWrapper query_testObjects(){
         String selection = null;
         String[] selectionArgs = null;
         String[] columns = null;

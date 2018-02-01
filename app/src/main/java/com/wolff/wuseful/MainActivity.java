@@ -38,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TestGeneric<String> t = new TestGeneric<>();
+        t.WtiteType();
+        TestGeneric<WTestObject> tt = new TestGeneric<>();
+        tt.WtiteType();
+
         //startService(new Intent(MainActivity.this,WService.class));
         //stopService(new Intent(MainActivity.this,WService.class));
 
